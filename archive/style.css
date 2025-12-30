@@ -1,0 +1,74 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    
+}
+
+.header {
+    background-image: linear-gradient(purple 80%, rgb(252, 228, 252));
+    color: rgb(196, 165, 226);
+    text-align: center;
+}
+
+.content {
+    flex: 1;
+    background: rgb(252, 228, 252);  
+}
+
+.content .campaings {
+    display: flex;
+}
+
+.oneShots,
+.multiShots {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    background: rgb(232, 213, 232);
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 5px 5px gray;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(212, 200, 218);
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 4px 4px darkgray;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.multiShots button {
+    margin-bottom: 50px;
+}
+
+#halloween-2025 {
+    width: 300px
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-image: linear-gradient(rgb(252, 228, 252), rgb(187, 147, 227) 20%, rgb(187, 147, 227) 80%, rgb(252, 228, 252) 98%);
+}
+
+.content p {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(252, 228, 252), purple 20%);
+    color: rgb(196, 165, 226);
+}
