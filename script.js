@@ -16,3 +16,9 @@ party.addEventListener("dragend",(x)=> {
     party.style.left = x.x - 50 + "px";
     party.style.top = x.y - 50 + "px";
 })
+
+party.addEventListener("touchmove",(x)=> {
+    console.log(x);
+    party.style.left = x.x - 50 + "px";
+    party.style.top = x.y - 50 + "px";
+})
