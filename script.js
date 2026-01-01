@@ -18,7 +18,7 @@ party.addEventListener("dragend",(x)=> {
     party.style.top = x.y - 50 + "px";
 })
 
-party.addEventListener("touchend",(x)=> {
+party.addEventListener("touchmove",(x)=> {
     console.log(x);
     debug.textContent = x.changedTouches[0].pageX + ", " + x.changedTouches[0].pageY + ", " + x.changedTouches;
     party.style.left = x.changedTouches[0].pageX - 50 + "px";
