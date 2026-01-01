@@ -20,7 +20,7 @@ party.addEventListener("dragend",(x)=> {
 
 party.addEventListener("touchend",(x)=> {
     console.log(x);
-    debug.textContent = x.changedTouches[0].pageX + ", " + x.changedTouches[0].pageY + ", " + x;
+    debug.textContent = x.changedTouches[0].pageX + ", " + x.changedTouches[0].pageY + ", " + x.changedTouches;
     party.style.left = x.changedTouches[0].pageX - 50 + "px";
     party.style.top = x.changedTouches[0].pageY - 50 + "px";
 })
