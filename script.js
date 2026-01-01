@@ -14,8 +14,8 @@ setInterval(()=> {
 
 party.addEventListener("dragend",(x)=> {
     console.log(x);
-    party.style.left = x.x - 50 + "px";
-    party.style.top = x.y - 50 + "px";
+    party.style.left = x.x - 25 + "px";
+    party.style.top = x.y - 25 + "px";
 })
 
 party.addEventListener("touchmove",(x)=> {
