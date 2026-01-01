@@ -1,5 +1,6 @@
 const map = document.querySelector("img");
 const party = document.querySelector("#party");
+const debug = document.querySelector("#debug");
 
 setInterval(()=> {
     if (window.innerHeight / 1439 * 2559 > window.innerWidth){
@@ -17,8 +18,9 @@ party.addEventListener("dragend",(x)=> {
     party.style.top = x.y - 50 + "px";
 })
 
-party.addEventListener("touchmove",(x)=> {
+party.addEventListener("touchend",(x)=> {
     console.log(x);
+    debug.textContent = x.x + ", " + x.y + ", " + x;
     party.style.left = x.x - 50 + "px";
     party.style.top = x.y - 50 + "px";
 })
