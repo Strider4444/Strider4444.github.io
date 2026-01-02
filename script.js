@@ -40,7 +40,7 @@ circusInside.addEventListener("click",()=> {
     
 })
 
-circusInside.addEventListener("touchend",()=> {
+circusInside.addEventListener("touchcancel",()=> {
     if (circusInside.style.opacity == 1){
         circusInside.style.opacity = 0;
     }else {
