@@ -1,6 +1,7 @@
 const map = document.querySelector("video");
 const party = document.querySelector("#party");
 const circusInside = document.querySelector("#circusInside");
+const tavernInside = document.querySelector("#tavernInside");
 const debug = document.querySelector("#debug");
 
 setInterval(()=> {
@@ -16,6 +17,9 @@ setInterval(()=> {
     circusInside.style.width = map.clientWidth / 20 + "px";
     circusInside.style.left = map.clientWidth / 3.38 + "px";
     circusInside.style.top = map.clientHeight / 1.74 + "px";
+    tavernInside.style.width = map.clientWidth / 8 + "px";
+    tavernInside.style.left = map.clientWidth / 2.41 + "px";
+    tavernInside.style.top = map.clientHeight / 2.05 + "px";
 }, 100)
 
 party.addEventListener("dragend",(x)=> {
@@ -45,6 +49,24 @@ circusInside.addEventListener("touchcancel",()=> {
         circusInside.style.opacity = 0;
     }else {
         circusInside.style.opacity = 1;
+    }
+    
+})
+
+tavernInside.addEventListener("click",()=> {
+    if (tavernInside.style.opacity == 1){
+        tavernInside.style.opacity = 0;
+    }else {
+        tavernInside.style.opacity = 1;
+    }
+    
+})
+
+tavernInside.addEventListener("touchcancel",()=> {
+    if (tavernInside.style.opacity == 1){
+        tavernInside.style.opacity = 0;
+    }else {
+        tavernInside.style.opacity = 1;
     }
     
 })
