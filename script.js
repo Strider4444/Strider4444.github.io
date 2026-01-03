@@ -12,8 +12,8 @@ setInterval(()=> {
         map.style.height = window.innerHeight + "px";
         map.style.width = window.innerHeight / 1439 * 2559 + "px";
     }
-    party.style.width = map.clientWidth / 40 + "px";
-    party.style.height = map.clientWidth / 40 + "px";
+    party.style.width = map.clientWidth / 35 + "px";
+    party.style.height = map.clientWidth / 35 + "px";
     circusInside.style.width = map.clientWidth / 20 + "px";
     circusInside.style.left = map.clientWidth / 3.38 + "px";
     circusInside.style.top = map.clientHeight / 1.74 + "px";
